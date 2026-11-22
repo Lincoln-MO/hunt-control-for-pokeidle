@@ -1,68 +1,92 @@
 # Hunt Control for PokeIdle
 
-**Extensão de navegador para análise e gerenciamento de hunts no [PokeIdle.io](https://pokeidle.io/).**  
-Versão do código neste repositório: **0.1.9** · Manifest V3 · Desenvolvedor: **Lincoln Martins**.
+**Analise hunts, escolha sua rota e gerencie caçadas com mais controle no [PokeIdle.io](https://pokeidle.io/).**
 
-> **Estado:** versão em validação. O funcionamento no jogo depende da interface, dos eventos e das regras atuais do servidor.
->
-> **Aviso sobre redistribuição:** este projeto incorpora/adapta componentes relacionados a `/hunt for PokeIdle`, de Liang, e `Auto Hunt for PokeIdle`, de Zennex. * Veja [Créditos e licenciamento](docs/CREDITOS_E_LICENCIAMENTO.md) antes de torná-lo público.
+**Desenvolvedor:** Lincoln Martins  
+**Versão:** `0.1.9` · **Plataforma:** Google Chrome (Manifest V3) · **Idioma:** Português (Brasil)
 
-![Captura real do ranking de hunts](screenshots/reais/02_ranking_melhor_xp.png)
+> Projeto independente, não oficial, desenvolvido e mantido por **Lincoln Martins**. Não possui vínculo com a equipe responsável pelo PokeIdle.io.
+
+![Painel real do Hunt Control com ranking de hunts](screenshots/reais/02_ranking_melhor_xp.png)
+
+## Sobre o projeto
+
+O **Hunt Control** é uma extensão de navegador voltada à análise e ao gerenciamento de caçadas (*hunts*) no PokeIdle.io. O projeto reúne ferramentas de comparação de desempenho, seleção de rotas e automações configuráveis em uma interface integrada ao jogo.
+
+Sua proposta é oferecer **mais autonomia para o jogador**: acompanhar indicadores, manter uma hunt selecionada, automatizar a reposição de consumíveis ou utilizar rotas de captura, sem obrigar o usuário a ligar todas as funções ao mesmo tempo.
 
 ## Funcionalidades
 
-- **Análise de hunts:** compara locais de caça por XP/h, ouro/h, abates por hora, tempo estimado e risco, conforme os dados disponíveis no jogo.
-- **Melhor XP:** recomenda caçadas segundo os cálculos do painel.
-- **Fixa na lista:** permite marcar uma hunt e mantê-la como destino da automação, respeitando as travas do jogo.
-- **Reposição de itens:** configura estoque mínimo, quantidade de reposição e reserva de ouro para Poké Balls, poções e revives, independentemente da troca de hunt.
-- **Pokédex · VIP:** cria uma rota para espécies ainda não registradas na Pokédex, priorizando capturas mais viáveis para o Pokémon em campo.
-- **Top Catch · VIP:** acompanha localmente capturas distintas realizadas pela automação na semana; reorganiza a fila ao trocar de Pokémon e reinicia a semana de referência no domingo às 00:00, horário de Brasília.
-- **Apoio voluntário:** botão de apoio com Pix, opcional e separado das funções de caça.
+| Recurso | O que faz |
+| --- | --- |
+| **Análise de hunts** | Compara XP/h, ouro/h, abates por hora, tempo de abate e risco estimado. |
+| **Melhor XP** | Recomenda hunts com base no desempenho calculado para o Pokémon ativo. |
+| **Fixa na lista** | Permite selecionar uma hunt e manter o destino escolhido, respeitando as regras do jogo. |
+| **Reposição automática** | Configura limites de estoque de Poké Balls, poções e revives, além de reserva de ouro. |
+| **Pokédex · VIP** | Planeja capturas de espécies que ainda não constam como registradas na Pokédex. |
+| **Top Catch · VIP** | Gerencia uma lista semanal local de espécies capturadas durante a automação, com atualização da rota conforme o Pokémon ativo. |
+| **Apoio opcional** | Disponibiliza uma opção voluntária de apoio ao projeto via Pix. |
 
-### Modos de captura e limites
+### Modos de captura VIP
 
-Os modos **Pokédex** e **Top Catch** exigem VIP ativo no jogo e utilizam a opção oficial **Lançar até Capturar**. Uma alteração de estado isolada não é tratada como prova suficiente de captura: a extensão também compara os registros de captura retornados pelo jogo.
+Os modos **Pokédex** e **Top Catch** utilizam a função **Lançar até Capturar** disponibilizada pelo jogo para contas com VIP ativo. A extensão acompanha os estados retornados pelo jogo e os registros de captura para atualizar seus objetivos.
 
-O **Top Catch** não lê retroativamente o placar semanal oficial nem sincroniza a lista entre navegadores. O registro de capturas da extensão é local; capturas manuais ou realizadas antes da ativação podem não constar nesse acompanhamento. O reinício semanal local pode divergir da virada oficial do servidor caso o fuso horário seja diferente.
+O acompanhamento do **Top Catch** é feito localmente: não substitui o placar semanal oficial do PokeIdle, não recupera automaticamente capturas antigas e não sincroniza o histórico entre dispositivos. A semana local é reiniciada aos domingos, às 00h, no horário de Brasília.
 
-## Capturas de tela
+### Interface e controles
 
-| Tela | Captura real |
-|---|---|
-| Botão no Pokémon em campo | [Abrir](screenshots/reais/01_entrada_no_jogo.png) |
-| Ranking e modo Melhor XP | [Abrir](screenshots/reais/02_ranking_melhor_xp.png) |
-| Configuração de estoque | [Abrir](screenshots/reais/03_reposicao_de_estoque.png) |
-| Hunt fixa | [Abrir](screenshots/reais/04_hunt_fixa.png) |
-| Top Catch da Semana | [Abrir](screenshots/reais/05_top_catch_semanal.png) |
+- Automações de hunt e de estoque com ativação **independente**.
+- Seleção de hunts por clique na tabela, com filtros por região e indicadores de desempenho.
+- Painel compacto de capturas com o objetivo atual e os dois próximos.
+- Configurações locais para retomar suas preferências após recarregar o jogo.
 
-As pastas [`screenshots/loja`](screenshots/loja) e [`screenshots/promocionais`](screenshots/promocionais) contêm **artes de apresentação adaptadas** a partir de capturas, que podem apresentar diferenças de escala, composição ou pequenos detalhes em relação ao jogo. Use as **capturas reais** como referência técnica do produto.
+## Imagens do projeto
 
-## Instalação manual (Chrome)
+As imagens abaixo são **capturas reais do Hunt Control em funcionamento na interface do jogo**.
 
-1. Baixe ou clone o repositório em uma pasta no computador.
-2. Abra `chrome://extensions` e ative o **Modo do desenvolvedor**.
-3. Clique em **Carregar sem compactação** e selecione a pasta que contém `manifest.json`.
-4. Abra `https://pokeidle.io/`, recarregue o jogo e clique em **Auto Hunt** no painel do Pokémon ativo.
-5. Configure e ative **somente** as automações desejadas. Elas iniciam desativadas.
+| Análise de hunts | Hunt fixa |
+| :---: | :---: |
+| ![Ranking de hunts](screenshots/reais/02_ranking_melhor_xp.png) | ![Seleção de hunt fixa](screenshots/reais/04_hunt_fixa.png) |
 
-**Evite executar simultaneamente** outras extensões que controlem as mesmas funções do jogo, pois podem enviar comandos conflitantes.
+| Reposição de estoque | Top Catch semanal |
+| :---: | :---: |
+| ![Estoque automático](screenshots/reais/03_reposicao_de_estoque.png) | ![Fila do Top Catch](screenshots/reais/05_top_catch_semanal.png) |
 
-## Estrutura
+Confira também o [botão de acesso no painel do Pokémon em campo](screenshots/reais/01_entrada_no_jogo.png). As pastas [`screenshots/loja`](screenshots/loja) e [`screenshots/promocionais`](screenshots/promocionais) contêm **artes de apresentação**, que podem apresentar enquadramentos e detalhes visuais diferentes das capturas originais.
+
+## Instalação local
+
+1. Baixe este repositório ou utilize `git clone`.
+2. No Chrome, abra `chrome://extensions` e habilite **Modo do desenvolvedor**.
+3. Selecione **Carregar sem compactação** e aponte para a pasta com o `manifest.json`.
+4. Abra [PokeIdle.io](https://pokeidle.io/), atualize a página e clique em **Auto Hunt** no painel do Pokémon em campo.
+5. Escolha os modos e ative somente as automações que desejar.
+
+> **Nota:** evite usar simultaneamente outras extensões que enviem comandos de automação para o mesmo jogo. As funcionalidades dependem das regras e dos estados atuais do servidor; verifique as configurações antes de habilitá-las.
+
+## Tecnologias e arquitetura
+
+- **JavaScript:** cálculos, integração com os estados do jogo e controle das automações.
+- **CSS:** apresentação e responsividade do painel.
+- **Chrome Extension Manifest V3:** execução dos scripts no domínio do PokeIdle.io.
+- **WebSocket do jogo:** observação de estados e envio de comandos solicitados pelas automações, sujeito às validações do servidor.
+- **Armazenamento local:** preferências e acompanhamento semanal da extensão.
 
 ```text
 hunt-control-for-pokeidle/
-├── src/                  # Scripts e estilos da extensão
-├── icons/                # Ícones nos tamanhos usados pelo navegador
+├── src/                         # Código JavaScript e CSS
+├── icons/                       # Ícones da extensão
 ├── screenshots/
-│   ├── reais/            # Capturas originais do PokeIdle
-│   ├── loja/             # Imagens de apresentação para Chrome Web Store
-│   └── promocionais/     # Banners em dimensões exigidas pela loja
+│   ├── reais/                   # Capturas reais do jogo
+│   ├── loja/                    # Imagens para a Chrome Web Store
+│   └── promocionais/            # Banners de apresentação
 ├── docs/
-│   ├── index.md          # Política de Privacidade; página inicial do GitHub Pages
+│   ├── index.md                 # Política de Privacidade / GitHub Pages
 │   ├── CREDITOS_E_LICENCIAMENTO.md
 │   ├── PUBLICACAO_E_PRIVACIDADE.md
 │   └── NOTAS_DE_DESENVOLVIMENTO.md
 ├── manifest.json
+├── LICENSE.md                   # Declaração de direitos autorais
 ├── README.md
 ├── CHANGELOG.md
 └── .gitignore
@@ -70,17 +94,18 @@ hunt-control-for-pokeidle/
 
 ## Privacidade
 
-O Hunt Control acessa informações do jogo para calcular hunts e executar automações. Configurações e progresso semanal são armazenados em `localStorage` da origem `pokeidle.io`. Não foi identificada telemetria ou infraestrutura própria do desenvolvedor para receber dados dos jogadores na versão 0.1.9. Veja a **[Política de Privacidade](docs/index.md)**.
+O Hunt Control utiliza dados disponibilizados na sessão do PokeIdle para exibir análises e executar as ações habilitadas pelo jogador. As configurações e o acompanhamento semanal ficam armazenados localmente no navegador.
 
-A política pode ser publicada pelo GitHub Pages usando **Settings → Pages → Deploy from a branch → main /docs**. Depois de habilitada, a página deve ficar disponível em `https://lincoln-mo.github.io/hunt-control-for-pokeidle/` (confirme o endereço exibido pelo GitHub antes de informar na Chrome Web Store).
+Consulte a [Política de Privacidade](docs/index.md). Para hospedá-la com GitHub Pages, publique a pasta `docs/` na branch `main` e use o endereço público informado pelo GitHub.
 
-## Histórico e documentação
+## Desenvolvimento e referências
 
-- [CHANGELOG.md](CHANGELOG.md): alterações organizadas por versão.
-- [Notas detalhadas de desenvolvimento](docs/NOTAS_DE_DESENVOLVIMENTO.md): documento original do pacote 0.1.9.
-- [Créditos e licenciamento](docs/CREDITOS_E_LICENCIAMENTO.md): componentes reutilizados e condições pendentes de verificação.
-- [Publicação e privacidade](docs/PUBLICACAO_E_PRIVACIDADE.md): checklist para GitHub Pages e Chrome Web Store.
+**Hunt Control for PokeIdle é um projeto de Lincoln Martins**, responsável por sua concepção, integração, interface e evolução. O desenvolvimento considerou, como referências de funcionalidades e experiência de uso, os projetos **`/hunt for PokeIdle` (Liang)** e **`Auto Hunt for PokeIdle` (Zennex)**.
 
-## Autoria e vínculo com o jogo
+A menção a essas referências reconhece a inspiração e não indica participação dos autores no desenvolvimento do Hunt Control, parceria ou vínculo com eles. Informações sobre a **procedência técnica de componentes** presentes no pacote estão em [Créditos e licenciamento](docs/CREDITOS_E_LICENCIAMENTO.md).
 
-**Hunt Control** é desenvolvido e mantido por **Lincoln Martins**. Projeto independente, **não oficial**, sem vínculo com a equipe do PokeIdle.io. A autoria das melhorias do Hunt Control não elimina direitos de terceiros sobre eventuais componentes incorporados.
+## Direitos autorais e documentação
+
+© 2026 **Lincoln Martins**. Direitos reservados sobre as **contribuições originais de sua autoria** no Hunt Control. O repositório público é disponibilizado para consulta e portfólio; não foi concedida uma licença aberta geral para reutilização ou redistribuição de todo o código. Consulte [`LICENSE.md`](LICENSE.md).
+
+Acompanhe as atualizações em [CHANGELOG.md](CHANGELOG.md).

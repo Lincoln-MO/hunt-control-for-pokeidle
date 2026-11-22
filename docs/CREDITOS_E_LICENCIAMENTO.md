@@ -1,19 +1,30 @@
-# Créditos, direitos de terceiros e licenciamento
+# Autoria, referências e licenciamento
 
-O projeto **Hunt Control for PokeIdle** é mantido por **Lincoln Martins** e combina interface, configuração e integrações implementadas/adaptadas para esta extensão.
+## Hunt Control for PokeIdle
 
-Os arquivos fornecidos e a documentação do projeto identificam código e/ou abordagens adaptados a partir de:
+O **Hunt Control for PokeIdle** é um projeto independente **desenvolvido e mantido por Lincoln Martins**. Sua proposta, organização da experiência, interface integrada, evolução e funcionalidades adicionais constituem o trabalho apresentado neste repositório.
 
-- **`/hunt for PokeIdle` — Liang**, versão de referência 1.0.23: análise, cálculos e componentes relacionados à seleção/ranking de hunts.
-- **`Auto Hunt for PokeIdle` — Zennex**, versão de referência 1.1.1: fluxos de automação e reposição de itens.
+## Projetos de referência
 
-O componente `src/jogo-bundle.js` também contém módulos incorporados usados para ler estruturas do jogo. Antes de qualquer publicação pública, é necessário identificar a origem, os titulares e as condições aplicáveis a cada componente incluído.
+Duas extensões fizeram parte das referências estudadas durante a concepção e evolução do Hunt Control:
 
-**Situação atual:** nenhuma licença de redistribuição dos componentes de terceiros foi verificada e registrada neste pacote. Portanto:
+- **`/hunt for PokeIdle`**, de **Liang** — referência para recursos de análise e comparação de caçadas.
+- **`Auto Hunt for PokeIdle`**, de **Zennex** — referência para recursos de automação de caças e gerenciamento de consumíveis.
 
-1. **Não adicione automaticamente uma licença MIT, GPL, Apache ou similar** cobrindo todo o código.
-2. Confira os avisos de copyright/licença nos repositórios ou pacotes originais e guarde os comprovantes de autorização.
-3. Se a redistribuição não for permitida, substitua ou remova as partes derivadas **antes de publicar o repositório ou a extensão**.
-4. Ser autor das adaptações e creditar os projetos de origem **não concede, por si só, o direito de redistribuir** os arquivos originais.
+A citação é um **reconhecimento de inspiração e referência técnica**, não uma declaração de coautoria, colaboração, vínculo comercial ou afiliação. Os autores desses projetos não são apresentados como desenvolvedores do Hunt Control.
 
-Este documento não é uma licença, não substitui autorização dos titulares e não altera os direitos que possam existir sobre os arquivos de origem.
+Semelhanças entre funcionalidades, procedimentos usuais de integração e soluções condicionadas por requisitos técnicos **não significam, isoladamente, reprodução de código**. O desenvolvimento independente de funcionalidades equivalentes não requer automaticamente autorização de quem implementou uma ideia semelhante anteriormente.
+
+## Procedência dos arquivos desta versão
+
+A documentação de desenvolvimento da versão **0.1.9** registra que a construção do pacote partiu de materiais de referência e preservou/adaptou implementações em alguns módulos. Na árvore disponível há, entre outros, arquivos de cálculo e geografia mantidos do material usado como base (`src/engine.js`, `src/geo.js`) e um pacote de módulos do jogo (`src/jogo-bundle.js`).
+
+Essa procedência **não muda a autoria das contribuições próprias de Lincoln Martins**. Ao mesmo tempo, a titularidade de um trecho que tenha sido efetivamente incorporado de outra fonte é distinta da mera inspiração em sua funcionalidade. A publicação e o licenciamento de arquivos com código de outras procedências devem respeitar os direitos aplicáveis a esses trechos específicos.
+
+## Licenciamento do repositório
+
+**© 2026 Lincoln Martins — direitos reservados sobre as contribuições originais de sua autoria.**
+
+O repositório é público para fins de apresentação técnica e portfólio. **Não há concessão de licença MIT, GPL, Apache ou outra licença aberta abrangendo automaticamente todo o pacote.** Consulte [`LICENSE.md`](../LICENSE.md).
+
+Marcas, personagens, nomes, artes e dados do jogo pertencem aos respectivos titulares quando aplicável. Hunt Control é um projeto não oficial, sem vínculo com a equipe do PokeIdle.io.

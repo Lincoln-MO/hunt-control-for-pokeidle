@@ -1,6 +1,6 @@
 # Hunt Control for PokeIdle · versão 0.1.7 (teste local)
 
-Adaptação pessoal por **Lincoln Martins**, a partir de arquivos fornecidos pelo usuário de **/hunt for PokeIdle 1.0.23** (Liang) e **Auto Hunt for PokeIdle 1.1.1** (Zennex). Preserve o reconhecimento dos autores originais. **O direito de republicar o código depende da licença e/ou autorização dos autores**; esta entrega não atesta permissão para publicar o fork no GitHub.
+Registro técnico das etapas de evolução do **Hunt Control**, projeto desenvolvido e mantido por **Lincoln Martins**. Durante a implementação foram utilizados, como materiais de referência e de trabalho, arquivos de **/hunt for PokeIdle 1.0.23** (Liang) e **Auto Hunt for PokeIdle 1.1.1** (Zennex). Esta nota registra a procedência técnica de módulos incorporados e as modificações feitas ao longo das versões; referências de funcionalidade não implicam, por si só, coautoria ou necessidade de autorização.
 
 ## Como instalar
 
@@ -91,11 +91,11 @@ Adaptação pessoal por **Lincoln Martins**, a partir de arquivos fornecidos pel
 - Nenhum envio cria conexão externa; somente comandos permitidos, usando WebSocket já aberto e sujeito às restrições do servidor.
 - Não garante mais XP ou compras. O jogo pode aplicar travas, limites, cooldowns, reinícios e alterar a mecânica.
 - **PRIVACIDADE**: a chave Pix de doações agora é uma chave aleatória. Ela ficará visível no pacote publicado, pois os usuários precisam dela para doar. Confira o QR e o destinatário com um aplicativo bancário antes da publicação.
-- O código base inclui módulos incorporados e derivados das duas extensões; audite autoria, dependências e licenças antes de publicação.
+- A origem e as condições de redistribuição de **arquivos efetivamente incorporados** devem ser verificadas antes de uma licença geral do código; a semelhança funcional isolada não cria essa obrigação.
 
 ## Organização
 
-`src/auto.js`: estoque + hunt + Pokédex. `src/adapter.js`: ponte para o motor atualizado. `src/hook.js`: escuta e envio oficial. `src/ui.js` e `.css`: interface. `src/pix.js`: chave Pix aleatória e BR Code atualizados. Outros arquivos preservam cálculos e recursos da /hunt original.
+`src/auto.js`: estoque + hunt + Pokédex. `src/adapter.js`: ponte para o motor atualizado. `src/hook.js`: escuta e envio oficial. `src/ui.js` e `.css`: interface. `src/pix.js`: chave Pix aleatória e BR Code atualizados. O registro histórico também inclui cálculos e recursos mantidos de materiais de referência utilizados na construção do pacote.
 
 ## Correção 0.1.9 — rearmar "Lançar até Capturar" após mudança de hunt
 

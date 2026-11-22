@@ -1,6 +1,6 @@
 # Histórico de alterações — Hunt Control
 
-Este histórico resume as mudanças identificadas na documentação das versões fornecidas. A versão do código aqui incluído é **0.1.9**. Nem todas as etapas foram verificadas em uma conta real do PokeIdle.
+Este histórico resume a evolução das versões fornecidas. A versão do código incluído permanece **0.1.9**. A revisão posterior do README, das referências e da declaração de direitos autorais foi **somente documental**, sem mudanças na execução da extensão. Nem todas as etapas foram verificadas em uma conta real do PokeIdle.
 
 ## [0.1.9] — Rearme do arremesso VIP
 

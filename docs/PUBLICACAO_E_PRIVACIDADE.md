@@ -2,7 +2,7 @@
 
 ## 1. Antes de tornar o código público
 
-- [ ] Confirmar a licença/autorização dos componentes de Liang e Zennex e módulos incluídos. Ler [créditos e licenciamento](CREDITOS_E_LICENCIAMENTO.md).
+- [ ] Conferir a procedência e as condições aplicáveis **aos trechos efetivamente incorporados de outras fontes** (não às funcionalidades semelhantes em si). Ver [Autoria, referências e licenciamento](CREDITOS_E_LICENCIAMENTO.md).
 - [ ] Fazer teste real das automações Pokédex e Top Catch no jogo.
 - [ ] Conferir o destinatário exibido pela chave Pix e pelo QR com o aplicativo bancário.
 - [ ] Revisar as declarações de dados e permissões conforme o pacote que será enviado à loja.
