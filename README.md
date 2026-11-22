@@ -5,7 +5,7 @@ Versão do código neste repositório: **0.1.9** · Manifest V3 · Desenvolvedor
 
 > **Estado:** versão em validação. O funcionamento no jogo depende da interface, dos eventos e das regras atuais do servidor.
 >
-> **Aviso sobre redistribuição:** este projeto incorpora/adapta componentes relacionados a `/hunt for PokeIdle`, de Liang, e `Auto Hunt for PokeIdle`, de Zennex. **A autorização ou licença de redistribuição desses componentes ainda precisa ser verificada.** Não considere a presença do código neste pacote uma concessão de licença de terceiros. Veja [Créditos e licenciamento](docs/CREDITOS_E_LICENCIAMENTO.md) antes de torná-lo público.
+> **Aviso sobre redistribuição:** este projeto incorpora/adapta componentes relacionados a `/hunt for PokeIdle`, de Liang, e `Auto Hunt for PokeIdle`, de Zennex. * Veja [Créditos e licenciamento](docs/CREDITOS_E_LICENCIAMENTO.md) antes de torná-lo público.
 
 ![Captura real do ranking de hunts](screenshots/reais/02_ranking_melhor_xp.png)
 
