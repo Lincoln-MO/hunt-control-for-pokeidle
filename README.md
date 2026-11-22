@@ -81,7 +81,8 @@ hunt-control-for-pokeidle/
 │   ├── loja/                    # Imagens para a Chrome Web Store
 │   └── promocionais/            # Banners de apresentação
 ├── docs/
-│   ├── index.md                 # Política de Privacidade / GitHub Pages
+│   ├── index.md                 # Página de privacidade no GitHub Pages
+│   ├── POLITICA_DE_PRIVACIDADE.md # Documento de privacidade no repositório
 │   ├── CREDITOS_E_LICENCIAMENTO.md
 │   ├── PUBLICACAO_E_PRIVACIDADE.md
 │   └── NOTAS_DE_DESENVOLVIMENTO.md
@@ -96,7 +97,7 @@ hunt-control-for-pokeidle/
 
 O Hunt Control utiliza dados disponibilizados na sessão do PokeIdle para exibir análises e executar as ações habilitadas pelo jogador. As configurações e o acompanhamento semanal ficam armazenados localmente no navegador.
 
-Consulte a [Política de Privacidade](docs/index.md). Para hospedá-la com GitHub Pages, publique a pasta `docs/` na branch `main` e use o endereço público informado pelo GitHub.
+Consulte a [Política de Privacidade](docs/POLITICA_DE_PRIVACIDADE.md). A mesma política está em [`docs/index.md`](docs/index.md) para publicação pelo **GitHub Pages**: configure a branch `main` e a pasta `/docs` em **Settings → Pages**. Confirme o endereço publicado antes de informá-lo à Chrome Web Store.
 
 ## Desenvolvimento e referências
 

@@ -10,13 +10,15 @@
 
 ## 2. Política de Privacidade com GitHub Pages
 
-A política de privacidade está em [`docs/index.md`](index.md). Para hospedar como página:
+A Política de Privacidade está disponível em [`POLITICA_DE_PRIVACIDADE.md`](POLITICA_DE_PRIVACIDADE.md) e foi reproduzida em [`index.md`](index.md), a página inicial do GitHub Pages. Mantenha o conteúdo dos dois arquivos sincronizado ao atualizar a política. Para hospedar como página:
 
 1. Entre no repositório do GitHub.
 2. Abra **Settings → Pages**.
 3. Configure **Deploy from a branch**, branch `main`, pasta `/docs`.
 4. Salve, aguarde a publicação e abra o URL público informado pelo GitHub.
-5. Cole esse URL na seção de privacidade da Chrome Web Store.
+5. Abra o endereço em uma **janela anônima** para verificar se o texto inteiro está acessível publicamente.
+6. Cole esse URL na seção **Práticas de privacidade → URL da Política de Privacidade** da Chrome Web Store.
+7. Confira se as declarações de uso de dados da loja correspondem à versão do código e à política publicada.
 
 Endereço esperado para o repositório `Lincoln-MO/hunt-control-for-pokeidle`, **depois de publicar o GitHub Pages**: `https://lincoln-mo.github.io/hunt-control-for-pokeidle/`. Confirme antes de usar.
 

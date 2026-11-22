@@ -2,6 +2,12 @@
 
 Este histórico resume a evolução das versões fornecidas. A versão do código incluído permanece **0.1.9**. A revisão posterior do README, das referências e da declaração de direitos autorais foi **somente documental**, sem mudanças na execução da extensão. Nem todas as etapas foram verificadas em uma conta real do PokeIdle.
 
+## Documentação — 22/11/2026 (sem alteração do código)
+
+- Política de Privacidade revisada conforme o comportamento identificado na v0.1.9.
+- Incluído `docs/POLITICA_DE_PRIVACIDADE.md` e atualizada a página `docs/index.md` para GitHub Pages.
+- Esclarecidos armazenamento local, distinção entre captura semanal e Pokédex permanente, comunicações com o servidor e apoio via Pix.
+
 ## [0.1.9] — Rearme do arremesso VIP
 
 - Adicionada nova verificação após chegada à próxima hunt para reativar **Lançar até Capturar**.
